@@ -1,4 +1,3 @@
-
 ### OpenZeppelinCustom
 Custom implementation of basic ERC20 token using OpenZeppelin library
 
