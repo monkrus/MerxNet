@@ -1,0 +1,25 @@
+{
+  "name": "merxnet",
+  "version": "1.0.0",
+  "description": "Custom implementation of basic ERC20 token using OpenZeppelin library",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monkrus/merxnet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monkrus/merxnet/issues"
+  },
+  "homepage": "https://github.com/monkrus/merxnet#readme",
+  "dependencies": {
+    "openzeppelin-solidity": "^2.2.0"
+  }
+}

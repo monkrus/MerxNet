@@ -11,4 +11,8 @@ Custom implementation of basic ERC20 token using OpenZeppelin library
 4.Install OpenZeppelin library `npm install openzeppelin-solidity`
 
 ### Steps
+
+1.Create `merxnet.sol` file in the contracts folder 
+
+
 ### Tests
