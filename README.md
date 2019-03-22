@@ -28,6 +28,20 @@ Please check the required version of the Solidity compiler (**for all .sol files
 
 5. Create deploy_token.js in migrations folder. 
 
-6.
+6. Run the blockchain emulator. Install `npm install ganache-cli` and run it `ganache-cli`.
+
+7. Modify truffle-config.js (truffle.js for Mac).
+
+8. Run `truffle migrate --reset` to migrate the contract.
+
+9. Run `truffle console`. Test the blockchain by typing:
+truffle(development)>MerxNetToken.deployed().then((instance) =>{merx = instance})
+
+
+
+
+
+
+
 
 ### Tests

@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/monkrus/merxnet#readme",
   "dependencies": {
+    "ganache-cli": "^6.4.1",
     "openzeppelin-solidity": "^2.2.0"
   }
 }
