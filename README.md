@@ -23,7 +23,9 @@ If `import` is highligted red in your editor, add following to your user setting
 
 3.Create a constructor to pass in arguments into DetailedERC20.
 
-4. 
+4.Run `truffle compile`.
+Please check the required version of the Solidity compiler (**for all .sol files including imported ones**) by running `truggle version`.  If needed, run `npm uninstall -g truffle`and the `npm install -g truffle` 
+
 
 
 ### Tests
