@@ -4,5 +4,5 @@ import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
 import "openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol";
 
 contract MerxNetToken  is ERC20,ERC20Detailed  {
-    
+    constructor(string _name, string _symbol,  uint)
 }

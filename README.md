@@ -12,7 +12,18 @@ Custom implementation of basic ERC20 token using OpenZeppelin library
 
 ### Steps
 
-1.Create `merxnet.sol` file in the contracts folder 
+1.Create `MerxToken.sol` file in the contracts folder.
+
+2.Import from OpenZeppelin libraries using `import` keyword. Please note the importing format is using forward slashes. 
+If `import` is highligted red in your editor, add following to your user settings(e.g. in VSC):
+```
+"solidity.packageDefaultDependenciesContractsDirectory": "",
+"solidity.packageDefaultDependenciesDirectory": "node_modules", 
+```
+
+3.Create a constructor to pass in arguments into DetailedERC20.
+
+4. 
 
 
 ### Tests
