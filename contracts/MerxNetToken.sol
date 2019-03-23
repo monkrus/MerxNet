@@ -16,4 +16,3 @@ contract MerxNetToken  is ERC20 , ERC20Detailed  {
 
     }
 
-

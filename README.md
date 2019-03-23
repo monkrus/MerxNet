@@ -1,4 +1,4 @@
-### OpenZeppelinCustom
+### [MerxNet](https://merxnet.com/)
 Custom implementation of basic ERC20 token using OpenZeppelin library
 
 ### Prerequisites
