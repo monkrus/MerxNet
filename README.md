@@ -21,12 +21,12 @@ If `import` is highligted red in your editor, add following to your user setting
 "solidity.packageDefaultDependenciesDirectory": "node_modules", 
 ```
 
-3. Create a constructor to pass in arguments into DetailedERC20.
+3. Create a constructor to pass in arguments into DetailedERC20.Update a `truffle-config.js` file with `solc....`
 
 4. Run `truffle compile`.
-Please check the required version of the Solidity compiler (**for all .sol files including imported libraries**) by running `truggle version`.  If needed, run `npm uninstall -g truffle`and the `npm install -g truffle` 
+Please check the required version of the Solidity compiler (**for all .sol files including imported libraries**) by running `truffle version`.  If needed, run `npm uninstall -g truffle`and the `npm install -g truffle` 
 
-5. Create deploy_token.js in migrations folder. 
+5. Create 2_deploy_token.js in migrations folder. 
 
 6. Run the blockchain emulator. Install `npm install ganache-cli` and run it `ganache-cli`.
 
@@ -34,16 +34,22 @@ Please check the required version of the Solidity compiler (**for all .sol files
 
 8. Run `truffle migrate --reset` to migrate the contract.
 
-9. Run `truffle console`. Test the blockchain by typing:
-truffle(development)>MerxNetToken.deployed().then((instance) =>{merx = instance})
+9. Run `truffle console`. 
+Test the blockchain by typing:
+`truffle(development)>MerxNetToken.deployed().then((instance) =>{merx = instance})` and then `merx`
 
-10.
-
-
-
-
-
-
-
+10. To test, type `merx.name()`, `merx.decimals()`
 
 ### Tests
+
+1. Write `Merx.test.js` in the test folder. See file for detailed steps.
+
+2. Double check the correctness of the await test,
+run `truffle test` (Expected result : 3 passing).
+
+3. Install chai `npm install chai`,`npm i chai-as-promised` and 
+`npm i chai-bignumber`
+
+4.Run `npm install`
+
+
