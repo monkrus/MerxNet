@@ -1,7 +1,12 @@
+//web3 libraries allow you to interact with ethereum node
+//const BigNumber = web3.BigNumber;
+const BigNumber = require('bignumber.js');
 //import contract
 const MerxNetToken = artifacts.require('MerxNetToken');
 // "should" is part of the chai language to construct assertions
-require('chai').should();
+require('chai')
+.use(require('chai-bignumber')(BigNumber))
+.should();
 // use Mocha testing framework and Chai assertion library to write tests
 contract('MerxNetToken', accounts => {
 	const _name = 'MerxNetToken';
@@ -17,16 +22,21 @@ contract('MerxNetToken', accounts => {
 	});
 
 describe('token attributes', function() {
+
 it (`has the correct name`, async function()  {
 const name = await this.token.name();
 name.should.equal(_name);
 });	
 
-it (`has the correct symbol`, function()  {
-
+it (`has the correct symbol`, async function()  {
+const symbol = await this.token.symbol();
+symbol.should.equal(_symbol);
 });
 
-it (`has the correct decimals`, function()  {
+it (`has the correct decimals`,async function()  {
+const decimals = await this.token.decimals();
+// bignumber library helps to avoid AssertionError 
+decimals.should.be.bignumber.equal(_decimals);
 
 });
 })
