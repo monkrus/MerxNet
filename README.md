@@ -37,6 +37,8 @@ Please check the required version of the Solidity compiler (**for all .sol files
 9. Run `truffle console`. Test the blockchain by typing:
 truffle(development)>MerxNetToken.deployed().then((instance) =>{merx = instance})
 
+10.
+
 
 
 
