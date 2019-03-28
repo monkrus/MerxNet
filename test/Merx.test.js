@@ -1,12 +1,16 @@
 //web3 libraries allow you to interact with ethereum node
-//const BigNumber = web3.BigNumber;
-const BigNumber = require('bignumber.js');
+const BigNumber = web3.BigNumber;
 //import contract
 const MerxNetToken = artifacts.require('MerxNetToken');
 // "should" is part of the chai language to construct assertions
+
 require('chai')
 .use(require('chai-bignumber')(BigNumber))
 .should();
+
+
+
+//.should();
 // use Mocha testing framework and Chai assertion library to write tests
 contract('MerxNetToken', accounts => {
 	const _name = 'MerxNetToken';
