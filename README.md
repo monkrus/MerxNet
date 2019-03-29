@@ -50,6 +50,8 @@ run `truffle test` (Expected result : 3 passing).
 3. Install chai `npm install chai`,`npm i chai-as-promised` and 
 `npm i chai-bignumber`
 
-4.Run `npm install`
+4. Run `npm install`
+
+5. ** 03/28/2019 There is a conflict I could not resolve between chai-bignumer and chai-as-promised libraries that results in failed test.**
 
 
